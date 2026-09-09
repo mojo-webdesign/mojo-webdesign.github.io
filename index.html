@@ -1,243 +1,507 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <title>Gaming Campus</title>
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-  <link href="./style.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="icon" href="./assets/img/manette.png">
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Clément — Front Office Manager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <nav>
-    <ul>
-      <li>Accueil</li>
-      <li>business school</li>
-      <li>ecole esport</li>
-      <li>cours de jeux vidéo</li>
-      <li>le campus</li>
-      <li>newsroom</li>
-      <li>parents</li>
-      <li class="language"><div id="language">FR</div>|<div id="language">EN</div></li>
-    </ul>
-  </nav>
 
-  <header class="background-filter">
-    <div class="main-header">
-      <img src="./assets/img/logo-gc-hero.png" alt="logo">
-      <h1>Passion. Professionnalisme. Performance.</h1>
-      <button>gaming campus en video <i class="fas fa-angle-right"></i></button>
+<div class="cursor" id="cursor"><span class="cursor-label"></span></div>
+
+<header class="topbar">
+  <span class="topbar-name">Clément</span>
+  <span class="topbar-role">FRONT OFFICE MANAGER</span>
+</header>
+
+<main class="hero">
+  <h1 class="headline" aria-label="Hospitality with a different mindset.">
+    <span class="line-mask"><span class="line">HOSPITALITY</span></span>
+    <span class="line-mask"><span class="line">WITH A</span></span>
+    <span class="line-mask"><span class="line">DIFFERENT</span></span>
+    <span class="line-mask"><span class="line">MINDSET.</span></span>
+  </h1>
+
+  <div class="hero-sub">
+    <span class="job-title reveal-fade">CHEF DE RÉCEPTION</span>
+    <span class="job-tags reveal-fade">
+      <span class="tag hoverable" data-label="">HOSPITALITY</span>
+      <span class="tag-sep">×</span>
+      <span class="tag hoverable" data-label="">TECHNOLOGY</span>
+    </span>
+  </div>
+
+  <div class="hero-links reveal-fade">
+    <a href="#checkins" class="hero-link hoverable" data-label="">CHECK-INS</a>
+    <a href="#experiences" class="hero-link hoverable" data-label="EXPLORE →">EXPERIENCES</a>
+  </div>
+</main>
+
+<div class="scroll-cue">
+  <span class="scroll-word">SCROLL</span>
+  <span class="scroll-line"><span class="scroll-line-fill" id="scrollFill"></span></span>
+</div>
+
+<section class="timeline-wrap" id="experiences">
+  <div class="timeline-sticky">
+    <div class="timeline-head">
+      <span class="timeline-label">01 / EXPERIENCE</span>
+      <h2 class="timeline-title">
+        <span>THREE</span>
+        <span>YEARS.</span>
+        <span>ONE</span>
+        <span>DIRECTION.</span>
+      </h2>
     </div>
-  </header>
 
-  <div class="header-text">
-    <p>Imaginé par des professionnels des jeux vidéo et de l'éducation, Gaming Campus est un lieu unique pour révéler
-      les talents et développer les compétences.</p>
-  </div>
-
-<section class="container-logo">
-  <div class="cards-container">
-        
-      <!-- ********IMAGES******* -->
-      <div class="i1">
-      <img src="./assets/img/logo-gbs-home.png" alt="logo GBS">
-      </div>
-      <div class="i2">
-      <img src="./assets/img/logo-ga-home.png" alt="logo gaming academy">
-      </div>
-      <div class="i3">
-      <img src="./assets/img/logo-gg-home.png" alt="logo gaming guru">
-      </div>
-      
-      <!-- ********TITLES******* -->
-      <h3 class="t1">gaming business school</h3>
-      <h3 class="t2">gaming academy</h3>
-      <h3 class="t3">gaming guru</h3>
-
-      <!-- ********PARAGRAPH******* -->
-      <p class="p1">Formez-vous dans la première école de management dédiée aux enjeux et métiers du jeuvidéo.</p>
-      <p class="p2">Entrainez-vous dans des conditions optimales pour devenir esportif professionnel.</p>
-      <p class="p3">Jouez avec les meilleurs gamers pour vous améliorer dans vos jeux vidéo préférés.</p>
-      
-      <!-- ********BUTTON******* -->
-      <button class="b1">en savoir plus</button>
-      <button class="b2">en savoir plus</button>
-      <button class="b3">en savoir plus</button>
-      
-  </div>
-</section>
-
-<section class="container-news">
-  <div class="grid-news">
-      
-      <!-- ********HEADER-NEWS******* -->
-      <div class="news">
-        <h2>les news du campus</h2>
-        <p>Suivez l'actualité de Gaming Campus, de G.Guru, G.B.S et G.Academy.</p>
-      </div>
-      <div class="newsroom">
-        <button>la newsroom <i class="fas fa-angle-right"></i></button>
-      </div>
-      
-      <div class="blank1"></div>
-
-      <!-- ********NEW-CARD-1******* -->
-      <div class="image1">
-          <img src="./assets/img/ri8decembre.jpg" alt="réunion d'information">
-      </div>
-      <div class="title1">
-        <h4>Réunion d'information 19 décembre</h4>
-      </div>
-      <div class="paragraphe1">
-        <p>Venez à notre rencontre lors de cette réunion d'information. Témoignages des étudiants / Ateliers sur la pédagogige par projet "Active Learning by Gaming Campus" / Découverte des locaux / Rencontre avec l'équipe pédagogique / Questions réponses.</p>
-      </div>
-      <div class="link1">
-        <a href="#">Sur inscription <i class="fas fa-angle-right"></i></a>
-      </div>
-      
-      <!-- ********NEW-CARD-2******* -->
-      <div class="image2">
-        <img src="./assets/img/pgw18home.jpg" alt="inauguration GC Lyon">
-      </div>
-      <div class="title2">
-        <h4>Paris Games Week 2018 et réunions d'information</h4>
-      </div>
-      <div class="paragraphe2">
-        <p>Pendant tout le mois d'octobre venez rencontrer l'équipe pédagogique du Gaming Campus : Campus Lyon et stand Gaming Capus à la PGW18.</p>
-      </div>
-      <div class="link2">
-        <a href="#">lire la suite <i class="fas fa-angle-right"></i></a>
-      </div>
-      
-      <!-- ********NEW-CARD-3******* -->
-      <div class="image3">
-        <img src="./assets/img/inauguration_gaming_campus_photo.jpg" alt="inauguration GC Lyon">
-      </div>
-      <div class="title3">
-        <h4>Inauguration Gaming Campus Lyon</h4>
-      </div>
-      <div class="paragraphe3">
-        <p>Revivez l'inauguration du Gaming Campus Lyon avec 180 invités, les grands annonces de la rentrée, les photos de la soirée et les premières dates de réunions d'information.</p>
-      </div>
-      <div class="link3">
-        <a href="#">lire la suite <i class="fas fa-angle-right"></i></a>
-      </div>
-      
-  </div>
-</section>
-
-<section class="contact">
-  <div class="contact-container">
-      
-      <!-- * *************main-logo****** * -->
-      <div class="contact-img">
-        <img src="./assets/img/logo-gc-footer.jpg" alt="logo-end">
-      </div>
-      
-      <!-- /* *************info****** */ -->
-      <h5 class="title-info">infos pratiques</h5>
-      <ul class="infos-p">
-        <li><a href="#">Gaming Business School</a></li>
-        <li><a href="#">Gaming Academy</a></li>
-        <li><a href="#">Gaming Guru</a></li>
-        <li><a href="#">Recrutement</a></li>
-        <li><a href="#">Investisseurs</a></li>
-        <li><a href="#">Mentions légales</a></li>
-        <li><a href="#">C.G.U</a></li>
-      </ul>
-      
-      <!-- /* *************parent****** */ -->
-      <h5 class="title-parent">parents</h5>
-      <p class="parent-p">Questions / réponses pour vous accompagner dans votre réflexion sur l'orientation de votre enfant et le choix de Gaming Campus.</p>
-      <a class="link-parent" href="#">En savoir plus</a>
-      
-      <!-- /* *************contact****** */ -->
-      <h5 class="title-contact">nous contacter</h5>
-      <div class="num-mail">
-        <h6>Tél. 04 28 29 81 03</h6>
-      </div>
-      <div class="network">
-        <h5>nous suivre</h5>
-        <div class="footer-logos">
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-instagram"></i>
+    <div class="timeline-track" id="timelineTrack">
+      <div class="timeline-step">
+        <div class="step-content">
+          <span class="step-year">2022</span>
+          <span class="step-role">RECEPTIONIST</span>
+          <span class="step-hotel">HÔTEL D'ARGENSON</span>
         </div>
       </div>
-      
-      <div class="copyright">
-        <p>© 2018 Gaming Campus.</p>
-        <p>Tout droits réservés.</p>
+      <div class="timeline-step">
+        <div class="step-content">
+          <span class="step-year">2023</span>
+          <span class="step-role">FRONT OFFICE MANAGER</span>
+          <span class="step-hotel">HÔTEL D'ARGENSON</span>
+        </div>
       </div>
-    
-      <div class="blank"></div>
+      <div class="timeline-step">
+        <div class="step-content">
+          <span class="step-year">2025</span>
+          <span class="step-role">FRONT OFFICE MANAGER</span>
+          <span class="step-hotel">HÔTEL DANTAN</span>
+        </div>
+      </div>
+    </div>
 
-<!-- /* *************text-foot****** */ -->
-      <div class="medias-text">
-          <h3>ils parlent de nous</h3>
-          <p>Voir toutes les retombées presse.</p>
-      </div>
-
-<!-- /* *************logo-foot****** */ -->
-      <div class="medias-logos">
-          <span class="img">
-            <img src="./assets/img/figaro.png" alt="le figaro">
-          </span>
-          <span class="img">
-            <img src="./assets/img/challenges.png" alt="challenges">
-          </span>
-          <span class="img">
-            <img src="./assets/img/leparisien.png" alt="le parisien">
-          </span>
-          <span class="img">
-            <img src="./assets/img/lemonde.png" alt="le monde">
-          </span>
-          <span class="img">
-            <img src="./assets/img/progres.png" alt="le progrès">
-          </span>
-          <span class="img">
-            <img src="./assets/img/echos.png" alt="les echos">
-          </span>
-          <span class="img">
-            <img src="./assets/img/bfm.png" alt="BFM tv">
-          </span>
-          <span class="img">
-            <img src="./assets/img/lepoint.png" alt="l'équipe">
-          </span>
-          <div class="img">
-          </div>
-      </div>
-      
+    <div class="timeline-progress">
+      <span class="dot" data-dot="0"></span>
+      <span class="dot" data-dot="1"></span>
+      <span class="dot" data-dot="2"></span>
+    </div>
   </div>
 </section>
 
-<footer>
-      <h3>partenaires officiels</h3>
-      <ul>
-        <li><img src="./assets/img/apollo.png" alt="apollo"></li>
-        <li><img src="./assets/img/chiliz.png" alt="chiliz"></li>
-        <li><img src="./assets/img/omen.png" alt="omen"></li>
-        <li><img src="./assets/img/joa.png" alt="joa"></li>
-        <li><img src="./assets/img/zol.png" alt="zol"></li>
-        <li><img src="./assets/img/maxonomic.png" alt="maxndmic"></li>
-        <li><img src="./assets/img/credit-mutuel.png" alt="credit mutuel"></li>
-        <li><img src="./assets/img/talent-web.png" alt="TW"></li>
-        <li><img src="./assets/img/ubisoft.png" alt="ubisoft"></li>
-        <li><img src="./assets/img/vitality.png" alt="vitality"></li>
-      </ul>
-</footer>
+<section class="plot-twist" id="plot-twist">
+  <div class="plot-inner">
+    <h2 class="plot-headline word-reveal" id="plotHeadline">
+      <span class="word">I</span> <span class="word">WASN'T</span>
+      <span class="word">SUPPOSED</span> <span class="word">TO</span>
+      <span class="word">WORK</span> <span class="word">IN</span>
+      <span class="word">HOTELS.</span>
+    </h2>
 
+    <div class="plot-body">
+      <p class="plot-p">Before hospitality, I was working as a freelance web developer and graphic designer.</p>
+      <p class="plot-p">I was used to working independently, managing projects, solving problems and learning new tools on my own.</p>
+      <p class="plot-p">I built websites. I designed interfaces. I worked directly with clients.</p>
+      <p class="plot-p">Then, in 2022, I wanted something different.</p>
+      <p class="plot-p">Something more stable.</p>
+      <p class="plot-p">So I looked for a CDI.</p>
+      <p class="plot-p plot-p-strong">And that's where hospitality entered the story.</p>
+    </div>
 
+    <div class="plot-transition" id="plotTransition">
+      <span class="transition-label-stack">
+        <span class="transition-label before">WEB DEVELOPER</span>
+        <span class="transition-label after">HOSPITALITY</span>
+      </span>
+      <span class="transition-line"><span class="transition-line-fill"></span></span>
+    </div>
+  </div>
+</section>
+
+<section class="start-section" id="the-start">
+  <div class="start-inner">
+    <span class="eyebrow reveal-fade-io">02 / THE START</span>
+
+    <h2 class="plan-headline word-reveal" id="planHeadline">
+      <span class="word">THE</span> <span class="word">PLAN</span>
+      <span class="break"></span>
+      <span class="word">WAS</span> <span class="word">SIMPLE.</span>
+    </h2>
+
+    <div class="steps-list" id="stepsList">
+      <span class="step-line">WORK AT NIGHT.</span>
+      <span class="step-line">BUILD WEBSITES BY DAY.</span>
+      <span class="step-line">GET THE CDI.</span>
+    </div>
+  </div>
+
+  <div class="silence-gap" aria-hidden="true"></div>
+
+  <div class="start-inner">
+    <h2 class="plan-headline word-reveal" id="twistHeadline">
+      <span class="word">IT</span> <span class="word">DIDN'T</span>
+      <span class="break"></span>
+      <span class="word">GO</span> <span class="word">AS</span>
+      <span class="break"></span>
+      <span class="word"><span class="deform-word">PLANNED.</span></span>
+    </h2>
+
+    <div class="start-body">
+      <p class="start-p reveal-fade-io">Very quickly, I was offered the opportunity to move to daytime reception.</p>
+      <p class="start-p reveal-fade-io">I accepted.</p>
+      <p class="start-p reveal-fade-io">Not because I knew where it would lead.</p>
+      <p class="start-p reveal-fade-io">But because I was curious.</p>
+    </div>
+
+    <div class="shift-block" id="shiftBlock">
+      <div class="shift-daynight">
+        <span class="shift-word night">NIGHT</span>
+        <span class="shift-word day">DAY</span>
+      </div>
+
+      <div class="shift-morph">
+        <span class="morph-text morph-before" id="morphBefore">NIGHT RECEPTION</span>
+        <span class="morph-text morph-after" id="morphAfter">FRONT OFFICE</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="clicked-section" id="clicked">
+  <div class="clicked-inner">
+    <h2 class="clicked-headline word-reveal" id="clickedHeadline">
+      <span class="word">THEN</span>
+      <span class="break"></span>
+      <span class="word">SOMETHING</span>
+      <span class="break"></span>
+      <span class="word clicked-word hoverable" data-label="">CLICKED.</span>
+    </h2>
+
+    <div class="click-words" id="clickWords">
+      <div class="click-item" data-type="people">
+        <span class="click-word-text">PEOPLE.</span>
+        <span class="click-icon icon-people" aria-hidden="true"></span>
+      </div>
+      <div class="click-item" data-type="teamwork">
+        <span class="click-word-text">TEAMWORK.</span>
+        <span class="click-icon icon-teamwork" aria-hidden="true">
+          <span class="dot dot-a"></span><span class="dot dot-b"></span>
+        </span>
+      </div>
+      <div class="click-item" data-type="decisions">
+        <span class="click-word-text">DECISIONS.</span>
+        <span class="click-icon icon-decisions" aria-hidden="true"></span>
+      </div>
+      <div class="click-item" data-type="energy">
+        <span class="click-word-text">ENERGY.</span>
+        <span class="click-icon icon-energy" aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <div class="clicked-body">
+      <p class="clicked-p reveal-fade-io">Daytime reception introduced me to something I didn't have as a freelancer:</p>
+      <p class="clicked-p clicked-p-list reveal-fade-io">People.</p>
+      <p class="clicked-p clicked-p-list reveal-fade-io">Teamwork.</p>
+      <p class="clicked-p clicked-p-list reveal-fade-io">The energy of a hotel.</p>
+      <p class="clicked-p reveal-fade-io">Talking to guests.<br />Solving problems together.<br />Making decisions in real time.</p>
+      <p class="clicked-p clicked-p-list reveal-fade-io">I liked it.</p>
+      <p class="clicked-p clicked-p-list reveal-fade-io">A lot.</p>
+      <p class="clicked-p reveal-fade-io">So I stayed.<br />I learned.<br />I progressed.</p>
+      <p class="clicked-p clicked-p-strong reveal-fade-io">And what started as a temporary career decision gradually became a profession.</p>
+    </div>
+  </div>
+</section>
+
+<section class="expertise-section" id="expertise">
+  <div class="expertise-inner">
+    <span class="eyebrow reveal-fade-io">03 / EXPERTISE</span>
+
+    <h2 class="plan-headline word-reveal" id="expertiseHeadlineA">
+      <span class="word">I</span> <span class="word">DIDN'T</span>
+      <span class="break"></span>
+      <span class="word">JUST</span> <span class="word">LEARN</span>
+      <span class="break"></span>
+      <span class="word">HOW</span> <span class="word">TO</span> <span class="word">RUN</span>
+      <span class="break"></span>
+      <span class="word">A</span> <span class="word">SHIFT.</span>
+    </h2>
+
+    <h2 class="plan-headline word-reveal expertise-sub" id="expertiseHeadlineB">
+      <span class="word">I</span> <span class="word">WANTED</span>
+      <span class="break"></span>
+      <span class="word">TO</span> <span class="word">UNDERSTAND</span>
+      <span class="break"></span>
+      <span class="word">THE</span> <span class="word">SYSTEM.</span>
+    </h2>
+  </div>
+
+  <div class="skills-nav" id="skillsNav">
+    <span class="skill-follower" id="skillFollower"></span>
+
+    <div class="skill-row" data-detail="UNDERSTAND THE SYSTEM.">
+      <span class="skill-index">01</span>
+      <span class="skill-name">PMS</span>
+    </div>
+    <div class="skill-row" data-detail="UNDERSTAND DISTRIBUTION.">
+      <span class="skill-index">02</span>
+      <span class="skill-name">D-EDGE</span>
+    </div>
+    <div class="skill-row" data-detail="UNDERSTAND DEMAND.">
+      <span class="skill-index">03</span>
+      <span class="skill-name">REVENUE</span>
+    </div>
+    <div class="skill-row" data-detail="UNDERSTAND THE FLOW.">
+      <span class="skill-index">04</span>
+      <span class="skill-name">OPERATIONS</span>
+    </div>
+    <div class="skill-row" data-detail="UNDERSTAND PEOPLE.">
+      <span class="skill-index">05</span>
+      <span class="skill-name">TEAM</span>
+    </div>
+  </div>
+</section>
+
+<section class="difference-section" id="difference">
+  <div class="difference-inner">
+    <h2 class="plan-headline word-reveal" id="differenceHeadline">
+      <span class="word">MY</span> <span class="word">FIRST</span>
+      <span class="break"></span>
+      <span class="word">CAREER</span>
+      <span class="break"></span>
+      <span class="word">NEVER</span>
+      <span class="break"></span>
+      <span class="word">LEFT.</span>
+    </h2>
+
+    <div class="code-reveal-wrap">
+      <span class="code-reveal" id="codeReveal"></span>
+    </div>
+
+    <div class="difference-body">
+      <p class="start-p reveal-fade-io">Years of working as a freelance developer taught me something extremely valuable:</p>
+      <p class="start-p start-p-strong reveal-fade-io">How to work independently.</p>
+      <p class="start-p reveal-fade-io">
+        When you work alone, nobody tells you what to do next.<br />
+        You have to organize yourself.<br />
+        Prioritize.<br />
+        Anticipate problems.<br />
+        Find solutions.<br />
+        Learn constantly.<br />
+        Deliver.
+      </p>
+      <p class="start-p start-p-strong reveal-fade-io">I brought that mindset with me into hospitality.</p>
+    </div>
+
+    <div class="qualities-stage">
+      <div class="qualities-grid" id="qualitiesGrid">
+        <span class="quality-item">AUTONOMOUS</span>
+        <span class="quality-item">STRUCTURED</span>
+        <span class="quality-item">CURIOUS</span>
+        <span class="quality-item">TECH-SAVVY</span>
+        <span class="quality-item">PROACTIVE</span>
+        <span class="quality-item">PROBLEM SOLVER</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hybrid-section" id="hybrid">
+  <div class="hybrid-inner">
+    <h2 class="plan-headline word-reveal" id="hybridHeadline">
+      <span class="word">A</span> <span class="word">HOTEL</span>
+      <span class="break"></span>
+      <span class="word">MANAGER</span>
+      <span class="break"></span>
+      <span class="word">WITH</span>
+      <span class="break"></span>
+      <span class="word">A</span> <span class="word"><span class="accent-word">DIGITAL</span></span>
+      <span class="break"></span>
+      <span class="word">MINDSET.</span>
+    </h2>
+
+    <div class="hybrid-body">
+      <p class="plot-p">My background in web development and graphic design gives me a different perspective on hospitality.</p>
+      <p class="plot-p">I'm comfortable with technology.<br />I understand digital tools quickly.</p>
+      <p class="plot-p">I enjoy understanding how systems work — and how they can work better.</p>
+      <p class="plot-p">And I'm naturally drawn to the numbers behind the operation.</p>
+      <p class="plot-p plot-p-strong">Yield.<br />Revenue.<br />Performance.<br />Optimization.</p>
+      <p class="plot-p">I don't want to simply follow processes.</p>
+      <p class="plot-p plot-p-strong">I want to understand them.<br />Question them.<br />Improve them.</p>
+    </div>
+  </div>
+</section>
+
+<section class="advantage-wrap" id="advantage">
+  <div class="advantage-sticky">
+    <div class="advantage-stage">
+      <div class="advantage-columns" id="advantageColumns">
+        <div class="advantage-col" id="colLeft">
+          <span class="advantage-col-title hospitality">HOSPITALITY</span>
+          <ul class="advantage-list">
+            <li>People</li>
+            <li>Operations</li>
+            <li>Service</li>
+            <li>Experience</li>
+          </ul>
+        </div>
+
+        <span class="advantage-x">×</span>
+
+        <div class="advantage-col" id="colRight">
+          <span class="advantage-col-title technology">TECHNOLOGY</span>
+          <ul class="advantage-list">
+            <li>Systems</li>
+            <li>Data</li>
+            <li>Automation</li>
+            <li>Optimization</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="advantage-morph" id="advantageMorph">
+        <span class="morph2-text morph2-before" id="advBefore">HOSPITALITY × TECHNOLOGY</span>
+        <span class="morph2-text morph2-after" id="advAfter">MY ADVANTAGE.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="always-more-section" id="always-more">
+  <div class="always-more-inner">
+    <h2 class="plan-headline word-reveal" id="alwaysMoreHeadline">
+      <span class="word">GOOD</span>
+      <span class="break"></span>
+      <span class="word">
+        <span class="enough-wrap" id="enoughWrap">
+          <span class="more-behind" id="moreBehind">MORE</span>
+          <span class="enough-front">ENOUGH</span>
+        </span>
+      </span>
+      <span class="break"></span>
+      <span class="word">ISN'T</span>
+      <span class="break"></span>
+      <span class="word">REALLY</span>
+      <span class="break"></span>
+      <span class="word">MY THING.</span>
+    </h2>
+
+    <div class="loop-list">
+      <div class="loop-row">
+        <p class="plot-p loop-sentence">Once I understand something, I want to go further.</p>
+        <div class="loop-pair">
+          <span class="loop-word">UNDERSTAND</span>
+          <span class="loop-arrow"><span class="loop-arrow-fill"></span></span>
+          <span class="loop-word loop-word-accent">GO FURTHER</span>
+        </div>
+      </div>
+
+      <div class="loop-row">
+        <p class="plot-p loop-sentence">Once I see a problem, I look for a solution.</p>
+        <div class="loop-pair">
+          <span class="loop-word">PROBLEM</span>
+          <span class="loop-arrow"><span class="loop-arrow-fill"></span></span>
+          <span class="loop-word loop-word-accent">SOLUTION</span>
+        </div>
+      </div>
+
+      <div class="loop-row">
+        <p class="plot-p loop-sentence">Once I learn a tool, I want to understand what else it can do.</p>
+        <div class="loop-pair">
+          <span class="loop-word">LEARN</span>
+          <span class="loop-arrow"><span class="loop-arrow-fill"></span></span>
+          <span class="loop-word loop-word-accent">EXPLORE</span>
+        </div>
+      </div>
+
+      <div class="loop-row">
+        <p class="plot-p loop-sentence">And when something can be improved, why leave it as it is?</p>
+        <div class="loop-pair">
+          <span class="loop-word">IMPROVE</span>
+          <span class="loop-arrow"><span class="loop-arrow-fill"></span></span>
+          <span class="loop-word loop-word-accent">MORE</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="positioning-section" id="positioning">
+  <div class="positioning-inner">
+    <span class="eyebrow reveal-fade-io">WHO I AM</span>
+
+    <h2 class="plan-headline descend-reveal" id="posHeadlineA">
+      <span class="word">FROM</span> <span class="word">FREELANCE</span>
+      <span class="break"></span>
+      <span class="word">DEVELOPER</span>
+    </h2>
+
+    <h2 class="plan-headline descend-reveal positioning-headline-b" id="posHeadlineB" data-delay-offset="0.5">
+      <span class="word">TO</span> <span class="word">FRONT</span>
+      <span class="break"></span>
+      <span class="word">OFFICE</span>
+      <span class="break"></span>
+      <span class="word">MANAGER.</span>
+    </h2>
+
+    <div class="positioning-divider reveal-fade-io"></div>
+
+    <div class="duo-list">
+      <div class="duo-row">
+        <span class="duo-text">HOSPITALITY × TECHNOLOGY</span>
+      </div>
+      <div class="duo-row">
+        <span class="duo-text">OPERATIONS × REVENUE</span>
+      </div>
+      <div class="duo-row">
+        <span class="duo-text">PEOPLE × PERFORMANCE</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final-section" id="final">
+  <div class="final-inner">
+    <h2 class="plan-headline word-reveal final-line" id="finalA">
+      <span class="word">A</span> <span class="word">CAREER</span>
+      <span class="break"></span>
+      <span class="word">I</span> <span class="word">DIDN'T</span> <span class="word">PLAN.</span>
+    </h2>
+
+    <h2 class="plan-headline word-reveal final-line" id="finalB">
+      <span class="word">A</span> <span class="word">PROFESSION</span>
+      <span class="break"></span>
+      <span class="word">I</span> <span class="word">CHOSE.</span>
+    </h2>
+
+    <h2 class="plan-headline word-reveal final-line" id="finalC">
+      <span class="word">A</span> <span class="word">SKILLSET</span>
+      <span class="break"></span>
+      <span class="word">BUILT</span> <span class="word">FROM</span>
+      <span class="break"></span>
+      <span class="word">TWO</span> <span class="word">WORLDS.</span>
+    </h2>
+  </div>
+
+  <div class="silence-gap" aria-hidden="true"></div>
+
+  <div class="final-inner">
+    <h2 class="plan-headline word-reveal final-big" id="finalD">
+      <span class="word">AND</span> <span class="word">I'M</span>
+      <span class="break"></span>
+      <span class="word">NOT</span> <span class="word">DONE</span>
+      <span class="break"></span>
+      <span class="word"><span class="accent-word">YET.</span></span>
+    </h2>
+
+    <div class="final-cta-wrap reveal-fade-io">
+      <a href="mailto:clement.bennaceur@hotmail.fr" class="final-cta hoverable" id="magneticBtn" data-label="">
+        <span class="magnetic-inner">LET'S TALK →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
 </body>
-
 </html>
