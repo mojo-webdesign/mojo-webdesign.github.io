@@ -335,7 +335,7 @@ const codeObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        scrambler.setText("WEB DEVELOPMENT");
+        scrambler.setText(codeReveal.dataset.text || "WEB DEVELOPMENT");
         codeObserver.unobserve(entry.target);
       }
     });

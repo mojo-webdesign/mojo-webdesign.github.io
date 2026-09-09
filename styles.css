@@ -114,6 +114,31 @@ a {
   color: var(--steel);
 }
 
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.lang-switch {
+  font-family: var(--font-text);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--bone);
+  border: 1px solid rgba(241, 239, 232, 0.3);
+  border-radius: 999px;
+  padding: 4px 12px;
+  cursor: none;
+  transition: color 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.lang-switch:hover {
+  color: var(--void);
+  background: var(--acid);
+  border-color: var(--acid);
+}
+
 /* ---------- hero ---------- */
 .hero {
   min-height: 100svh;
@@ -1066,7 +1091,7 @@ body.ready .scroll-cue {
 
 .code-reveal {
   display: inline-block;
-  font-family: "Courier New", ui-monospace, monospace;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
   font-weight: 700;
   font-size: clamp(22px, 4.2vw, 48px);
   letter-spacing: 0.02em;
@@ -1398,6 +1423,64 @@ body.ready .scroll-cue {
   transform: translateY(0);
 }
 
+/* ---------- targeting: application-specific pitch ---------- */
+.targeting-section {
+  background: var(--bone);
+  color: var(--void);
+  padding: 140px 48px;
+}
+
+.targeting-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.targeting-role {
+  margin-top: 24px;
+  font-weight: 600;
+  color: var(--void);
+}
+
+.targeting-intro {
+  margin-top: 12px;
+  max-width: 480px;
+}
+
+.targeting-columns {
+  margin-top: 88px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+}
+
+.targeting-columns .targeting-col:nth-child(2) {
+  transition-delay: 0.15s;
+}
+
+.targeting-col-title {
+  display: block;
+  font-family: var(--font-title);
+  font-weight: 800;
+  font-size: clamp(20px, 3vw, 30px);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+}
+
+.targeting-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.targeting-list li {
+  font-family: var(--font-text);
+  font-size: clamp(14px, 1.5vw, 17px);
+  line-height: 1.55;
+  color: var(--steel);
+}
+
 /* ---------- final (section 12) ---------- */
 .final-section {
   background: var(--void);
@@ -1474,4 +1557,6 @@ body.ready .scroll-cue {
   .loop-arrow { max-width: 80px; }
   .positioning-section { padding: 120px 24px; }
   .final-section { padding: 100px 24px 120px; }
+  .targeting-section { padding: 100px 24px; }
+  .targeting-columns { grid-template-columns: 1fr; gap: 48px; }
 }
