@@ -348,21 +348,6 @@ document
   .querySelectorAll(".qualities-grid")
   .forEach((el) => revealObserver.observe(el));
 
-// ---------- always more: ENOUGH -> MORE (after a deliberate pause) ----------
-const enoughWrap = document.getElementById("enoughWrap");
-const enoughObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => enoughWrap.classList.add("play"), 1500);
-        enoughObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.6 }
-);
-enoughObserver.observe(enoughWrap);
-
 document
   .querySelectorAll(".loop-pair")
   .forEach((el) => playObserver.observe(el));
