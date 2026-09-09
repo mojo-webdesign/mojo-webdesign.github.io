@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Clément | Front Office Manager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+<div class="cursor" id="cursor"><span class="cursor-label"></span></div>
+
+<header class="topbar">
+  <span class="topbar-name">Clément</span>
+  <div class="topbar-right">
+    <span class="topbar-role">FRONT OFFICE MANAGER</span>
+    <a href="../index.html" class="lang-switch hoverable" data-label="">EN</a>
+  </div>
+</header>
+
+<main class="hero">
+  <h1 class="headline" aria-label="L'hospitalité avec un autre état d'esprit.">
+    <span class="line-mask"><span class="line">L'HOSPITALITÉ</span></span>
+    <span class="line-mask"><span class="line">AVEC UN</span></span>
+    <span class="line-mask"><span class="line">AUTRE</span></span>
+    <span class="line-mask"><span class="line">ÉTAT D'ESPRIT.</span></span>
+  </h1>
+
+  <div class="hero-sub">
+    <span class="job-title reveal-fade">CHEF DE RÉCEPTION</span>
+    <span class="job-tags reveal-fade">
+      <span class="tag hoverable" data-label="">HOSPITALITÉ</span>
+      <span class="tag-sep">×</span>
+      <span class="tag hoverable" data-label="">TECHNOLOGIE</span>
+    </span>
+  </div>
+
+  <div class="hero-links reveal-fade">
+    <a href="#checkins" class="hero-link hoverable" data-label="">CHECK-INS</a>
+    <a href="#experiences" class="hero-link hoverable" data-label="EXPLORER →">EXPÉRIENCES</a>
+  </div>
+</main>
+
+<div class="scroll-cue">
+  <span class="scroll-word">DÉFILER</span>
+  <span class="scroll-line"><span class="scroll-line-fill" id="scrollFill"></span></span>
+</div>
+
+<section class="timeline-wrap" id="experiences">
+  <div class="timeline-sticky">
+    <div class="timeline-head">
+      <span class="timeline-label">01 / EXPÉRIENCE</span>
+      <h2 class="timeline-title">
+        <span>TROIS</span>
+        <span>ANNÉES.</span>
+        <span>UNE</span>
+        <span>DIRECTION.</span>
+      </h2>
+    </div>
+
+    <div class="timeline-track" id="timelineTrack">
+      <div class="timeline-step">
+        <div class="step-content">
+          <span class="step-year">2022</span>
+          <span class="step-role">RÉCEPTIONNISTE</span>
+          <span class="step-hotel">HÔTEL D'ARGENSON</span>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="step-content">
+          <span class="step-year">2023</span>
+          <span class="step-role">FRONT OFFICE MANAGER</span>
+          <span class="step-hotel">HÔTEL D'ARGENSON</span>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="step-content">
+          <span class="step-year">2025</span>
+          <span class="step-role">FRONT OFFICE MANAGER</span>
+          <span class="step-hotel">HÔTEL DANTAN</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-progress">
+      <span class="dot" data-dot="0"></span>
+      <span class="dot" data-dot="1"></span>
+      <span class="dot" data-dot="2"></span>
+    </div>
+  </div>
+</section>
+
+<section class="plot-twist" id="plot-twist">
+  <div class="plot-inner">
+    <h2 class="plot-headline word-reveal" id="plotHeadline">
+      <span class="word">JE</span> <span class="word">N'ÉTAIS</span>
+      <span class="word">PAS</span> <span class="word">DESTINÉ</span>
+      <span class="word">À</span> <span class="word">TRAVAILLER</span>
+      <span class="word">DANS</span> <span class="word">L'HÔTELLERIE.</span>
+    </h2>
+
+    <div class="plot-body">
+      <p class="plot-p">Avant l'hôtellerie, je travaillais comme développeur web et graphiste indépendant.</p>
+      <p class="plot-p">J'avais l'habitude de travailler seul, de gérer des projets, de résoudre des problèmes et d'apprendre de nouveaux outils par moi-même.</p>
+      <p class="plot-p">Je créais des sites web. Je concevais des interfaces. Je travaillais directement avec les clients.</p>
+      <p class="plot-p">Puis, en 2022, j'ai voulu quelque chose de différent.</p>
+      <p class="plot-p">Quelque chose de plus stable.</p>
+      <p class="plot-p">Alors j'ai cherché un CDI.</p>
+      <p class="plot-p plot-p-strong">Et c'est là que l'hôtellerie est entrée dans l'histoire.</p>
+    </div>
+
+    <div class="plot-transition" id="plotTransition">
+      <span class="transition-label-stack">
+        <span class="transition-label before">DÉVELOPPEUR WEB</span>
+        <span class="transition-label after">HOSPITALITÉ</span>
+      </span>
+      <span class="transition-line"><span class="transition-line-fill"></span></span>
+    </div>
+  </div>
+</section>
+
+<section class="start-section" id="the-start">
+  <div class="start-inner">
+    <span class="eyebrow reveal-fade-io">02 / LE DÉPART</span>
+
+    <h2 class="plan-headline word-reveal" id="planHeadline">
+      <span class="word">LE</span> <span class="word">PLAN</span>
+      <span class="break"></span>
+      <span class="word">ÉTAIT</span> <span class="word">SIMPLE.</span>
+    </h2>
+
+    <div class="steps-list" id="stepsList">
+      <span class="step-line">TRAVAILLER LA NUIT.</span>
+      <span class="step-line">CRÉER DES SITES LE JOUR.</span>
+      <span class="step-line">LA SÉCURITÉ DU CDI.</span>
+    </div>
+  </div>
+
+  <div class="silence-gap" aria-hidden="true"></div>
+
+  <div class="start-inner">
+    <h2 class="plan-headline word-reveal" id="twistHeadline">
+      <span class="word">ÇA</span> <span class="word">NE</span> <span class="word">S'EST</span> <span class="word">PAS</span>
+      <span class="break"></span>
+      <span class="word">PASSÉ</span> <span class="word">COMME</span>
+      <span class="break"></span>
+      <span class="word"><span class="deform-word">PRÉVU.</span></span>
+    </h2>
+
+    <div class="start-body">
+      <p class="start-p reveal-fade-io">Très vite, on m'a proposé de rejoindre la réception de jour.</p>
+      <p class="start-p reveal-fade-io">J'ai accepté.</p>
+      <p class="start-p reveal-fade-io">Pas parce que je savais où cela allait mener.</p>
+      <p class="start-p reveal-fade-io">Mais parce que j'étais curieux.</p>
+    </div>
+
+    <div class="shift-block" id="shiftBlock">
+      <div class="shift-daynight">
+        <span class="shift-word night">NUIT</span>
+        <span class="shift-word day">JOUR</span>
+      </div>
+
+      <div class="shift-morph">
+        <span class="morph-text morph-before" id="morphBefore">RÉCEPTION DE NUIT</span>
+        <span class="morph-text morph-after" id="morphAfter">FRONT OFFICE</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="clicked-section" id="clicked">
+  <div class="clicked-inner">
+    <h2 class="clicked-headline word-reveal" id="clickedHeadline">
+      <span class="word">PUIS</span>
+      <span class="break"></span>
+      <span class="word">QUELQUE CHOSE</span>
+      <span class="break"></span>
+      <span class="word clicked-word hoverable" data-label="">A FAIT DÉCLIC.</span>
+    </h2>
+
+    <div class="click-words" id="clickWords">
+      <div class="click-item" data-type="people">
+        <span class="click-word-text">LES RENCONTRES.</span>
+        <span class="click-icon icon-people" aria-hidden="true"></span>
+      </div>
+      <div class="click-item" data-type="teamwork">
+        <span class="click-word-text">TRAVAIL D'ÉQUIPE.</span>
+        <span class="click-icon icon-teamwork" aria-hidden="true">
+          <span class="dot dot-a"></span><span class="dot dot-b"></span>
+        </span>
+      </div>
+      <div class="click-item" data-type="decisions">
+        <span class="click-word-text">DÉCISIONS.</span>
+        <span class="click-icon icon-decisions" aria-hidden="true"></span>
+      </div>
+      <div class="click-item" data-type="energy">
+        <span class="click-word-text">ÉNERGIE.</span>
+        <span class="click-icon icon-energy" aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <div class="clicked-body">
+      <p class="clicked-p reveal-fade-io">La réception de jour m'a fait découvrir quelque chose que je n'avais pas en tant qu'indépendant :</p>
+      <p class="clicked-p clicked-p-list reveal-fade-io">Les rencontres.</p>
+      <p class="clicked-p clicked-p-list reveal-fade-io">Le travail d'équipe.</p>
+      <p class="clicked-p clicked-p-list reveal-fade-io">L'énergie d'un hôtel.</p>
+      <p class="clicked-p reveal-fade-io">Parler aux clients.<br />Résoudre des problèmes ensemble.<br />Prendre des décisions en temps réel.</p>
+      <p class="clicked-p clicked-p-list reveal-fade-io">J'ai aimé ça.</p>
+      <p class="clicked-p clicked-p-list reveal-fade-io">Beaucoup.</p>
+      <p class="clicked-p reveal-fade-io">Alors je suis resté.<br />J'ai appris.<br />J'ai progressé.</p>
+      <p class="clicked-p clicked-p-strong reveal-fade-io">Et ce qui a commencé comme une décision de carrière temporaire est devenu, petit à petit, un métier.</p>
+    </div>
+  </div>
+</section>
+
+<section class="expertise-section" id="expertise">
+  <div class="expertise-inner">
+    <span class="eyebrow reveal-fade-io">03 / EXPERTISE</span>
+
+    <h2 class="plan-headline word-reveal" id="expertiseHeadlineA">
+      <span class="word">JE</span> <span class="word">N'AI</span> <span class="word">PAS</span>
+      <span class="break"></span>
+      <span class="word">SEULEMENT</span> <span class="word">APPRIS</span>
+      <span class="break"></span>
+      <span class="word">À</span> <span class="word">GÉRER</span>
+      <span class="break"></span>
+      <span class="word">UN</span> <span class="word">SHIFT.</span>
+    </h2>
+
+    <h2 class="plan-headline word-reveal expertise-sub" id="expertiseHeadlineB">
+      <span class="word">JE</span> <span class="word">VOULAIS</span>
+      <span class="break"></span>
+      <span class="word">COMPRENDRE</span>
+      <span class="break"></span>
+      <span class="word">LE</span> <span class="word">SYSTÈME.</span>
+    </h2>
+  </div>
+
+  <div class="skills-nav" id="skillsNav">
+    <span class="skill-follower" id="skillFollower"></span>
+
+    <div class="skill-row" data-detail="COMPRENDRE LE SYSTÈME.">
+      <span class="skill-index">01</span>
+      <span class="skill-name">PMS</span>
+    </div>
+    <div class="skill-row" data-detail="COMPRENDRE LA DISTRIBUTION.">
+      <span class="skill-index">02</span>
+      <span class="skill-name">D-EDGE</span>
+    </div>
+    <div class="skill-row" data-detail="COMPRENDRE LA DEMANDE.">
+      <span class="skill-index">03</span>
+      <span class="skill-name">REVENUE</span>
+    </div>
+    <div class="skill-row" data-detail="COMPRENDRE LE FLUX.">
+      <span class="skill-index">04</span>
+      <span class="skill-name">OPÉRATIONS</span>
+    </div>
+    <div class="skill-row" data-detail="COMPRENDRE LES GENS.">
+      <span class="skill-index">05</span>
+      <span class="skill-name">ÉQUIPE</span>
+    </div>
+  </div>
+</section>
+
+<section class="difference-section" id="difference">
+  <div class="difference-inner">
+    <h2 class="plan-headline word-reveal" id="differenceHeadline">
+      <span class="word">MON</span> <span class="word">PREMIER</span>
+      <span class="break"></span>
+      <span class="word">MÉTIER</span>
+      <span class="break"></span>
+      <span class="word">NE</span> <span class="word">M'A</span> <span class="word">JAMAIS</span>
+      <span class="break"></span>
+      <span class="word">QUITTÉ.</span>
+    </h2>
+
+    <div class="code-reveal-wrap">
+      <span class="code-reveal" id="codeReveal" data-text="DÉVELOPPEMENT WEB"></span>
+    </div>
+
+    <div class="difference-body">
+      <p class="start-p reveal-fade-io">Des années à travailler comme développeur indépendant m'ont appris quelque chose d'extrêmement précieux :</p>
+      <p class="start-p start-p-strong reveal-fade-io">Comment travailler en autonomie.</p>
+      <p class="start-p reveal-fade-io">
+        Quand on travaille seul, personne ne vous dit quoi faire ensuite.<br />
+        Il faut s'organiser soi-même.<br />
+        Prioriser.<br />
+        Anticiper les problèmes.<br />
+        Trouver des solutions.<br />
+        Apprendre constamment.<br />
+        Livrer.
+      </p>
+      <p class="start-p start-p-strong reveal-fade-io">J'ai apporté cet état d'esprit dans l'hôtellerie.</p>
+    </div>
+
+    <div class="qualities-stage">
+      <div class="qualities-grid" id="qualitiesGrid">
+        <span class="quality-item">AUTONOME</span>
+        <span class="quality-item">STRUCTURÉ</span>
+        <span class="quality-item">CURIEUX</span>
+        <span class="quality-item">CONNECTÉ</span>
+        <span class="quality-item">PROACTIF</span>
+        <span class="quality-item">RÉSOLUTIF</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hybrid-section" id="hybrid">
+  <div class="hybrid-inner">
+    <h2 class="plan-headline word-reveal" id="hybridHeadline">
+      <span class="word">UN</span> <span class="word">MANAGER</span>
+      <span class="break"></span>
+      <span class="word">HÔTELIER</span>
+      <span class="break"></span>
+      <span class="word">AVEC</span> <span class="word">UN</span>
+      <span class="break"></span>
+      <span class="word">ÉTAT</span> <span class="word">D'ESPRIT</span>
+      <span class="break"></span>
+      <span class="word"><span class="accent-word">DIGITAL.</span></span>
+    </h2>
+
+    <div class="hybrid-body">
+      <p class="plot-p">Mon parcours en développement web et en design graphique m'apporte un regard différent sur l'hôtellerie.</p>
+      <p class="plot-p">Je suis à l'aise avec la technologie.<br />Je comprends vite les outils numériques.</p>
+      <p class="plot-p">J'aime comprendre comment les systèmes fonctionnent, et comment ils peuvent mieux fonctionner.</p>
+      <p class="plot-p">Et je suis naturellement attiré par les chiffres derrière l'exploitation.</p>
+      <p class="plot-p plot-p-strong">Yield.<br />Revenue.<br />Performance.<br />Optimisation.</p>
+      <p class="plot-p">Je ne veux pas me contenter de suivre les processus.</p>
+      <p class="plot-p plot-p-strong">Je veux les comprendre.<br />Les questionner.<br />Les améliorer.</p>
+    </div>
+  </div>
+</section>
+
+<section class="advantage-wrap" id="advantage">
+  <div class="advantage-sticky">
+    <div class="advantage-stage">
+      <div class="advantage-columns" id="advantageColumns">
+        <div class="advantage-col" id="colLeft">
+          <span class="advantage-col-title hospitality">HOSPITALITÉ</span>
+          <ul class="advantage-list">
+            <li>Personnes</li>
+            <li>Opérations</li>
+            <li>Service</li>
+            <li>Expérience</li>
+          </ul>
+        </div>
+
+        <span class="advantage-x">×</span>
+
+        <div class="advantage-col" id="colRight">
+          <span class="advantage-col-title technology">TECHNOLOGIE</span>
+          <ul class="advantage-list">
+            <li>Systèmes</li>
+            <li>Données</li>
+            <li>Automatisation</li>
+            <li>Optimisation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="advantage-morph" id="advantageMorph">
+        <span class="morph2-text morph2-before" id="advBefore">HOSPITALITÉ × TECHNOLOGIE</span>
+        <span class="morph2-text morph2-after" id="advAfter">MON ATOUT.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="always-more-section" id="always-more">
+  <div class="always-more-inner">
+    <h2 class="plan-headline word-reveal" id="alwaysMoreHeadline">
+      <span class="word">TOUJOURS</span> <span class="word">APPRENDRE.</span>
+      <span class="break"></span>
+      <span class="word">TOUJOURS</span> <span class="word">CONSTRUIRE.</span>
+    </h2>
+
+    <div class="loop-list">
+      <div class="loop-row">
+        <p class="plot-p loop-sentence">Une fois que je comprends quelque chose, je veux aller plus loin.</p>
+        <div class="loop-pair">
+          <span class="loop-word">COMPRENDRE</span>
+          <span class="loop-arrow"><span class="loop-arrow-fill"></span></span>
+          <span class="loop-word loop-word-accent">ALLER PLUS LOIN</span>
+        </div>
+      </div>
+
+      <div class="loop-row">
+        <p class="plot-p loop-sentence">Une fois que je vois un problème, je cherche une solution.</p>
+        <div class="loop-pair">
+          <span class="loop-word">PROBLÈME</span>
+          <span class="loop-arrow"><span class="loop-arrow-fill"></span></span>
+          <span class="loop-word loop-word-accent">SOLUTION</span>
+        </div>
+      </div>
+
+      <div class="loop-row">
+        <p class="plot-p loop-sentence">Une fois que j'apprends un outil, je veux comprendre ce qu'il peut faire de plus.</p>
+        <div class="loop-pair">
+          <span class="loop-word">APPRENDRE</span>
+          <span class="loop-arrow"><span class="loop-arrow-fill"></span></span>
+          <span class="loop-word loop-word-accent">EXPLORER</span>
+        </div>
+      </div>
+
+      <div class="loop-row">
+        <p class="plot-p loop-sentence">Et quand quelque chose peut être amélioré, pourquoi le laisser tel quel ?</p>
+        <div class="loop-pair">
+          <span class="loop-word">AMÉLIORER</span>
+          <span class="loop-arrow"><span class="loop-arrow-fill"></span></span>
+          <span class="loop-word loop-word-accent">ENCORE PLUS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="positioning-section" id="positioning">
+  <div class="positioning-inner">
+    <span class="eyebrow reveal-fade-io">QUI JE SUIS</span>
+
+    <h2 class="plan-headline descend-reveal" id="posHeadlineA">
+      <span class="word">DE</span> <span class="word">DÉVELOPPEUR</span>
+      <span class="break"></span>
+      <span class="word">FREELANCE</span>
+    </h2>
+
+    <h2 class="plan-headline descend-reveal positioning-headline-b" id="posHeadlineB" data-delay-offset="0.5">
+      <span class="word">À</span> <span class="word">FRONT</span> <span class="word">OFFICE</span>
+      <span class="break"></span>
+      <span class="word">MANAGER.</span>
+    </h2>
+
+    <div class="positioning-divider reveal-fade-io"></div>
+
+    <div class="duo-list">
+      <div class="duo-row">
+        <span class="duo-text">HOSPITALITÉ × TECHNOLOGIE</span>
+      </div>
+      <div class="duo-row">
+        <span class="duo-text">OPÉRATIONS × REVENUE</span>
+      </div>
+      <div class="duo-row">
+        <span class="duo-text">PERSONNES × PERFORMANCE</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="targeting-section" id="targeting">
+  <div class="targeting-inner">
+    <span class="eyebrow reveal-fade-io">CIBLE</span>
+
+    <h2 class="plan-headline word-reveal" id="targetingHeadline">
+      <span class="word">HÔTEL</span> <span class="word">BALMORAL</span>
+      <span class="break"></span>
+      <span class="word">PARIS.</span>
+    </h2>
+
+    <p class="plot-p targeting-role">Front Office Manager, le poste que je vise.</p>
+    <p class="plot-p targeting-intro">Je me suis renseigné sur ce qui rend cette maison différente, et sur ce que je pourrais y apporter.</p>
+
+    <div class="targeting-columns">
+      <div class="targeting-col reveal-fade-io">
+        <span class="targeting-col-title">CE QUE JE VOIS</span>
+        <ul class="targeting-list">
+          <li>Une maison familiale, pas une chaîne, tenue par Francine et François Dapremont depuis plus de 10 ans.</li>
+          <li>Un luxe discret dans un immeuble haussmannien du 19e siècle, à 100 mètres de l'Arc de Triomphe.</li>
+          <li>50 chambres, 6 suites, 2 appartements prestige : assez petit pour que chaque client soit reconnu par son nom.</li>
+          <li>Certifié Clef Verte : la durabilité fait déjà partie de l'identité, pas juste un argument marketing.</li>
+          <li>Petit-déjeuner offert en réservation directe : une maison qui se bat déjà pour rester indépendante des OTA.</li>
+        </ul>
+      </div>
+
+      <div class="targeting-col reveal-fade-io">
+        <span class="targeting-col-title accent-word">CE QUE J'APPORTE</span>
+        <ul class="targeting-list">
+          <li>Une expérience en management de la réception, prêt à gérer le desk dès le premier jour, pas à l'apprendre sur le tas.</li>
+          <li>Familier avec D-EDGE et la distribution, utile pour une maison qui mise sur la réservation directe.</li>
+          <li>Une bonne compréhension du Revenue et du PMS, au-delà de la simple gestion des check-ins.</li>
+          <li>L'autonomie et la rigueur acquises en tant qu'indépendant, adaptées à une maison où chacun porte plusieurs casquettes.</li>
+          <li>L'hôtellerie avec un état d'esprit tech, pour moderniser l'exploitation sans perdre l'âme de la maison.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final-section" id="final">
+  <div class="final-inner">
+    <h2 class="plan-headline word-reveal final-line" id="finalA">
+      <span class="word">UNE</span> <span class="word">CARRIÈRE</span>
+      <span class="break"></span>
+      <span class="word">QUE</span> <span class="word">JE</span> <span class="word">N'AVAIS</span> <span class="word">PAS</span> <span class="word">PRÉVUE.</span>
+    </h2>
+
+    <h2 class="plan-headline word-reveal final-line" id="finalB">
+      <span class="word">UN</span> <span class="word">MÉTIER</span>
+      <span class="break"></span>
+      <span class="word">QUE</span> <span class="word">J'AI</span> <span class="word">CHOISI.</span>
+    </h2>
+
+    <h2 class="plan-headline word-reveal final-line" id="finalC">
+      <span class="word">DES</span> <span class="word">COMPÉTENCES</span>
+      <span class="break"></span>
+      <span class="word">NÉES</span> <span class="word">DE</span>
+      <span class="break"></span>
+      <span class="word">DEUX</span> <span class="word">MONDES.</span>
+    </h2>
+  </div>
+
+  <div class="silence-gap" aria-hidden="true"></div>
+
+  <div class="final-inner">
+    <h2 class="plan-headline word-reveal final-big" id="finalD">
+      <span class="word">ET</span>
+      <span class="break"></span>
+      <span class="word"><span class="accent-word">MAINTENANT ?</span></span>
+    </h2>
+
+    <div class="final-cta-wrap reveal-fade-io">
+      <a href="mailto:clement.bennaceur@hotmail.fr" class="final-cta hoverable" id="magneticBtn" data-label="">
+        <span class="magnetic-inner">PARLONS-EN →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<script src="../script.js"></script>
+</body>
+</html>
